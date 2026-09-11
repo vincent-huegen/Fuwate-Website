@@ -1,0 +1,87 @@
+/*Targeting all elements*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* root variable setup */
+:root {
+  --bg-color: #000;
+  --default-font-color: #ffffff;
+  --font-weight-base: 400;
+  --font-size-base: 1rem;            /* 16px default */
+  --line-height-base: 1.5;
+}
+
+/* 3. Global HTML/Body Setup */
+html {
+  font-size: 100%;                   /* respects user browser defaults */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-optical-sizing: auto;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--default-font-color);
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. media elements safety */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*************************************************/
+
+.header{
+    display: flex;
+    padding: 30px 10px;
+    justify-content: space-between;
+}
+
+.logo{width: 140px;}
+.logo-sg{width: 60px;}
+.menu-button{
+    background-color: var(--bg-color);
+    color: var(--default-font-color);
+    font-size: 1.5rem;
+    text-decoration: underline;
+    border: none;
+}
+
+.nav-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease, opacity 0.35s ease;
+  opacity: 0;
+}
+
+.nav-wrapper.open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.nav {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav a{
+    color: var(--default-font-color);
+    text-decoration: none;
+}
+
+.full-width-box-paragraph{width: 100%;
+                          text-align: center;
+                          padding: 50px;
+}

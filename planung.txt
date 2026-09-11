@@ -1,0 +1,30 @@
+//
+Projekt
+
+1   Planung
+Welche Anwendung wird benötigt?         /Anforderungen
+Was will der Benutzer damit tun?
+
+Wie kann ich das umsetzen?              /Know How?
+Wie ist die zeitliche Planung?          /Zeitmanagement
+Wie sind die Kosten?                    /Kosten
+Sind Gewinne einzufahren?
+
+Umsetzung
+
+Test
+
+Abnahme
+
+
+
+
+
+
+
+
+zu 1. Planung
+Welche Anwendung:   Fuwate.de
+                    keine Kosten
+                    Frameworks  keine.
+                    und los
