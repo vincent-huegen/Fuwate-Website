@@ -12,15 +12,16 @@
     <title>Fuwate</title>
 </head>
 <body>
-    <header class="header">
-        <img class="logo" src="media/logo_black.png" alt="Das Fuwate Logo"/>
-        <img class="logo-sg" src="media/sg74_logo.png" alt="Das SG74 Logo"/>
+    <header class="flex-row-hd-ft">
+        <img id="img_fuwate_reload" class="logo" src="media/logo_black.png" alt="Das Fuwate Logo"/>
+        <img id="img_sg" class="logo-sg" src="media/sg74_logo.png" alt="Das SG74 Logo"/>
         <button id="menu_button" class="menu-button">MENU</button>
     </header>
     <div class="nav-wrapper">
         <nav class="nav">
             <a>Start</a>
             <a>&Uuml;ber Fuwate</a>
+            <a>Fuwate-Card</a>
             <a>Ligabetrieb</a>
             <a>Spielort und Training</a>
             <a>Spielszenen</a>
@@ -28,11 +29,106 @@
         </nav>
     </div>
     <main>
-        <section id="about">
+        <section id="hero">
             <img class="full-width-img" src="media/ben_and_ball.png" alt="Ein Ball in der Luft ist zu sehen.">
             <p class="full-width-box-paragraph">Fuwate ist eine Ballsportart aus Hannover. Gespielt wird im Modus Einzel oder Doppel.</p>
+            <img class="full-width-img" src="media/wall.png" alt="Hier wird die Wand eines Fuwate Platzes als Ausschnitt gezeigt">
         </section>
+        <section id="about">
+            <div class="flex-container-column">
+                <h2 class="heading">Fuwate</h2>
+                <p class="full-width-box-paragraph">
+                    Im Jahr 2026 sind wir eine kleine
+                    Community in Hannover. Es gibt ein
+                    Spielfeld beim Sportverein SG74. Dieser
+                    Verein erkannte 2014 das Potential des
+                    Sports und mit Hilfe der Lotto Sport
+                    Stiftung wurde das Spielfeld errichtet.
+                    <br>
+                    Wir stehen ein für ein freundliches
+                    Miteinander und Spaß am Spiel. 
+                    Ausgrenzung hat bei uns keinen Platz.
+                    <br>                    
+                    Wir bitten jede/n ernsthaft interessierte/n
+                    Spieler/in, die Fuwate-Card für 40 € zu erwerben.
+                </p>
+                <button id="card_button" class="button-rounded blue">Fuwate-Card</button>
+            </div>
+        </section>
+        <section id="league">
+            <div class="flex-container-column light-blue-bg">
+                <h2 class="heading">Einzelliga</h2>
+                <p class="full-width-box-paragraph">
+                    Die aktuellen Ergebnisse des Liga
+                    Betriebs, gibt es hier. Du bist Spieler/in
+                    oder interessiert? Über diesen Link findest
+                    du alle Infos.
+                </p>
+                <button id="league_button" class="button-rounded light-blue">Ligabetrieb</button>
+            </div>
+        </section>
+        <img class="full-width-img" src="media/wide_court.png" alt="Abgebildet ist ein Fuwate Platz.">
+        <section id="location">
+            <div class="flex-container-column">
+                <h2 class="heading">Spielort und Training</h2>
+                <p class="full-width-box-paragraph">
+                    Die SG von 1874 Hannover e.V. ist unser
+                    Kooperationsverein und Fuwate ist eine Sparte im
+                    Verein. Bei SG74 wird trainiert, gespielt und
+                    gemeinsam der Sport gelebt.
+                    <address class="full-width-box-paragraph">
+                        Adresse:</br>
+                        SG von 1874 Hannover e.V.</br>
+                        In der Steintormasch 48</br>
+                        30167 Hannover</br>
+                    </address>
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.3419835889476!2d9.691663777051284!3d52.382350546411196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b07537e6d040b1%3A0x2c07a4f1863a521e!2sFuWaTe%20(Fu%C3%9FballWandTennis)!5e0!3m2!1sen!2sde!4v1789130234464!5m2!1sen!2sde"
+                    class="full-width-img" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+        </section>
+        <section id="replays">
+            <div class="flex-container-column">
+                <h2 class="heading">Spielszenen</h2>
+                <p class="full-width-box-paragraph">
+                    In dieser Kategorie kannst Du Fuwate
+                    Aufnahmen als Wiederholung ansehen. Ein
+                    paar ausgewählte Ballwechsel sollen den
+                    Sport hautnah erlebbar machen.
+                </br>
+                    Klicke auf den Button und schau’ dich in
+                    Ruhe um.
+                </p>
+                <button id="replays_button" class="button-rounded white">Gallerie</button>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="flex-container-column white-bg">
+                <h2 class="heading">Kontakt</h2>
+                <p class="full-width-box-paragraph">
+                    Nimm gerne Kontakt auf und schreibe uns. Du
+                    hast Interesse an Sponsorship, du willst
+                    einen Fuwate-Platz bauen, du willst
+                    mitmachen? Melde dich gerne.
+                    Nutze das Kontaktformular oder schreibe
+                    direkt an:
+                </p>
+                <a class="mail" href="mailto:kontakt@fuwate.de">E-Mail senden</a>
+                <!--KONTAKTFORMULAR-->
+            </div>
+        </section>
+        <img class="full-width-img" src="media/court_from_above.png" alt="Fotografiert wurde ein Fuwate Platz von oben aus der Luft.">
     </main>
+
+    <footer class="flex-row-hd-ft">
+        <a>Impressum</a>
+        <a>Rechtliches</a>
+        <a>Datenschutz</a>
+    </footer>
+    <img class="center-img" src="media/logo_black.png" alt="Das Fuwate Logo" />
 
     <script src="js/script.js">
     </script>

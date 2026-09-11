@@ -9,6 +9,8 @@
 :root {
   --bg-color: #000;
   --default-font-color: #ffffff;
+  --blue: #1a498c;
+  --light-blue: #ebf6f9;
   --font-weight-base: 400;
   --font-size-base: 1rem;            /* 16px default */
   --line-height-base: 1.5;
@@ -41,20 +43,20 @@ img, picture, video, canvas, svg {
 
 /*************************************************/
 
-.header{
-    display: flex;
-    padding: 30px 10px;
-    justify-content: space-between;
+.flex-row-hd-ft{
+  display: flex;
+  padding: 30px 10px;
+  justify-content: space-between;
 }
 
 .logo{width: 140px;}
 .logo-sg{width: 60px;}
 .menu-button{
-    background-color: var(--bg-color);
-    color: var(--default-font-color);
-    font-size: 1.5rem;
-    text-decoration: underline;
-    border: none;
+  background-color: var(--bg-color);
+  color: var(--default-font-color);
+  font-size: 1.5rem;
+  text-decoration: underline;
+  border: none;
 }
 
 .nav-wrapper {
@@ -76,12 +78,80 @@ img, picture, video, canvas, svg {
   align-items: center;
 }
 
-.nav a{
-    color: var(--default-font-color);
-    text-decoration: none;
+.nav a, footer a{
+  color: var(--default-font-color);
+  text-decoration: none;
 }
 
-.full-width-box-paragraph{width: 100%;
-                          text-align: center;
-                          padding: 50px;
+.full-width-img{
+  width: 100%;
+}
+
+.flex-container-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 0 0;
+}
+
+.heading{
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px 0 5px 0;
+}
+
+.full-width-box-paragraph {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.button-rounded{
+  border-radius: 15px;
+  cursor: pointer;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: underline;
+  padding: 15px;
+  margin: 10px
+}
+
+.blue{
+  background-color:var(--blue);
+  color: var(--default-font-color);
+  border: 1px solid var(--default-font-color);
+}
+
+.mail{
+  color: var(--bg-color);
+  font-weight: 600;
+  text-decoration: overline;
+  padding: 10px;
+}
+
+.center-img{margin:auto;
+            width: 50%;}
+
+.light-blue-bg{
+  background-color:var(--light-blue);
+  color: var(--bg-color);
+}
+
+.white-bg{
+  background-color:var(--default-font-color);
+  color: var(--bg-color);
+}
+
+.light-blue{
+  background-color:var(--light-blue);
+  color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+}
+
+.white{
+  background-color:var(--bg-color);
+  color: var(--default-font-color);
+  border: 1px solid var(--default-font-color);
 }
