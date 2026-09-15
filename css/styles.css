@@ -43,14 +43,14 @@ img, picture, video, canvas, svg {
 
 /*************************************************/
 
-.flex-row-hd-ft{
+.flex-row-hd{
   display: flex;
-  padding: 30px 10px;
+  padding: 30px;
   justify-content: space-between;
 }
 
-.logo{width: 140px;}
-.logo-sg{width: 60px;}
+.logo{width: 80px;}
+.logo-sg{width: 80px;}
 .menu-button{
   background-color: var(--bg-color);
   color: var(--default-font-color);
@@ -131,15 +131,14 @@ img, picture, video, canvas, svg {
   padding: 10px;
 }
 
-.center-img{margin:auto;
-            width: 50%;}
+.center-img{margin: auto;}
 
 .light-blue-bg{
   background-color:var(--light-blue);
   color: var(--bg-color);
 }
 
-.white-bg{
+.white-bg, .white-bg a{
   background-color:var(--default-font-color);
   color: var(--bg-color);
 }
@@ -154,4 +153,67 @@ img, picture, video, canvas, svg {
   background-color:var(--bg-color);
   color: var(--default-font-color);
   border: 1px solid var(--default-font-color);
+}
+
+footer{padding: 20px;}
+.flex-row-ft{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 900px) {
+  .flex-row-hd{
+    justify-content: center;
+  }
+
+  .flex-row-hd img{width: 100px; margin: 20px;}
+
+
+  .menu-button{display: none;}
+  .nav-wrapper {
+    display: block !important;
+    opacity: 1;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5px;
+  }
+
+  .nav > * {
+    font-size: larger;
+    margin: 0 5px;
+  }
+
+  .grid-container-lg-respo{
+    display: grid;
+    grid-template-columns: 3fr 2fr; 
+    grid-template-rows: auto auto;
+    gap: 5px;     
+    
+    background-color: var(--default-font-color);
+    color: var(--bg-color);
+    
+    border: 2mm solid var(--default-font-color);
+  }
+
+  .grid-container-lg-respo:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .grid-container-lg-respo:nth-child(3){
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .grid-container-lg-respo p{
+    grid-column: 2;       /* Place in the second column */
+    grid-row: 1 / span 2; /* Span across both row 1 and row 2 */
+    margin: auto;
+    width: 70%;
+    font-size: 1.1rem;
+  }
 }
